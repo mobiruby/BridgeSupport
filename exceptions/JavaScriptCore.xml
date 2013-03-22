@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <struct name="JSClassDefinition"/>
+  <struct name="JSStaticFunction"/>
+  <struct name="JSStaticValue"/>
+  <opaque name="JSClassRef"/>
+  <opaque name="JSContextRef"/>
+  <opaque name="JSGlobalContextRef"/>
+  <opaque name="JSObjectRef"/>
+  <opaque name="JSPropertyNameAccumulatorRef"/>
+  <opaque name="JSPropertyNameArrayRef"/>
+  <opaque name="JSStringRef"/>
+  <opaque name="JSValueRef"/>
+  <function name="JSCheckScriptSyntax">
+    <arg index="4" type_modifier="o"/>
+  </function>
+  <function name="JSClassCreate">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="JSEvaluateScript">
+    <arg index="5" type_modifier="o"/>
+  </function>
+  <function name="JSObjectCallAsConstructor">
+    <arg c_array_length_in_arg="2" index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="o"/>
+  </function>
+  <function name="JSObjectCallAsFunction">
+    <arg c_array_length_in_arg="3" index="4" type_modifier="n"/>
+    <arg index="5" type_modifier="o"/>
+  </function>
+  <function name="JSObjectDeleteProperty">
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="JSObjectGetProperty">
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="JSObjectGetPropertyAtIndex">
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="JSObjectMake">
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="JSObjectMakeFunction">
+    <arg c_array_length_in_arg="2" index="3" type_modifier="n"/>
+    <arg index="7" type_modifier="o"/>
+  </function>
+  <function name="JSObjectSetPrivate">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="JSObjectSetProperty">
+    <arg index="5" type_modifier="o"/>
+  </function>
+  <function name="JSObjectSetPropertyAtIndex">
+    <arg index="4" type_modifier="o"/>
+  </function>
+  <function name="JSStringCreateWithCharacters">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="JSStringGetUTF8CString">
+    <arg c_array_length_in_arg="2" index="1" type_modifier="o"/>
+  </function>
+  <function name="JSValueIsEqual">
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="JSValueIsInstanceOfConstructor">
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="JSValueToNumber">
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="JSValueToObject">
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="JSValueToStringCopy">
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="JSObjectMakeConstructor">
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="JSObjectMakeFunctionWithCallback">
+    <arg index="2" type_modifier="n"/>
+  </function>
+</signatures>

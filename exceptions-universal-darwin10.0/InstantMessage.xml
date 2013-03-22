@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <class name="NSObject">
+    <method selector="getOpenGLBufferContext:pixelFormat:">
+      <arg index="0" type_modifier="o"/>
+      <arg index="1" type_modifier="o"/>
+    </method>
+    <method selector="getPixelBufferPixelFormat:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+    <method selector="renderIntoOpenGLBuffer:onScreen:forTime:">
+      <arg index="1" type_modifier="N"/>
+      <arg index="2" type_modifier="o"/>
+    </method>
+    <method selector="renderIntoPixelBuffer:forTime:">
+      <arg index="1" type_modifier="o"/>
+    </method>
+  </class>
+</signatures>

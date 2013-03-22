@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <function name="DVDGetAngle">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetAspectRatio">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetAudioLanguageCode">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDGetAudioLanguageCodeByStream">
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="DVDGetAudioOutputMode">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetAudioOutputModeCapabilities">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetAudioStream">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetAudioStreamFormat">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="o"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="DVDGetAudioStreamFormatByStream">
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="o"/>
+    <arg index="3" type_modifier="o"/>
+    <arg index="4" type_modifier="o"/>
+  </function>
+  <function name="DVDGetAudioVolume">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetAudioVolumeInfo">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="DVDGetBookmark">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="N"/>
+  </function>
+  <function name="DVDGetButtonPosition">
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="DVDGetButtoninfo">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="o"/>
+    <arg index="3" type_modifier="o"/>
+    <arg index="4" type_modifier="o"/>
+  </function>
+  <function name="DVDGetChapter">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetDiscRegionCode">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetDriveRegionCode">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDGetFormatStandard">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetGPRMValue">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDGetLastPlayBookmark">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="N"/>
+  </function>
+  <function name="DVDGetMediaVolumeCFName">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetMenuLanguageCode">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetNativeVideoSize">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDGetNumAngles">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetNumAudioStreams">
+    <arg index="0" c_array_of_variable_length="true" type_modifier="o"/>
+  </function>
+  <function name="DVDGetNumChapters">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDGetNumSubPictureStreams">
+    <arg index="0" c_array_of_variable_length="true" type_modifier="o"/>
+  </function>
+  <function name="DVDGetNumTitles">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetSPDIFDataOutDevice">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetSPDIFDataOutDeviceCFName">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDGetSPDIFDataOutDeviceCount">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetScanRate">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDGetState">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetSubPictureLanguageCode">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDGetSubPictureLanguageCodeByStream">
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="DVDGetSubPictureStream">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetTime">
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="DVDGetTimeEventRate">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetTitle">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetVideoDisplay">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetVideoWindowID">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGotoBookmark">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DVDHasMedia">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDHasMenu">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDHasNextChapter">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDHasPreviousChapter">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDIsDisplayingSubPicture">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDIsMuted">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDIsOnMenu">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDIsPaused">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDIsPlaying">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDIsSupportedDisplay">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDIsValidMediaRef">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDOpenMediaFile">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DVDOpenMediaVolume">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DVDRegisterEventCallBack">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="o"/>
+  </function>
+  <function name="DVDSetFatalErrorCallBack">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="DVDSetLastPlayBookmark">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DVDSwitchToDisplay">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDDoMenuCGClick">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDDoMenuCGMouseOver">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DVDGetMediaVolumeName">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetVideoCGBounds">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDGetVideoWindowRef">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="DVDIsRegisteredEventCallBack">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DVDSetVideoCGBounds">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DVDSetVideoWindowRef">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DVDUnregisterEventCallBack">
+    <arg index="0" type_modifier="n"/>
+  </function>
+</signatures>

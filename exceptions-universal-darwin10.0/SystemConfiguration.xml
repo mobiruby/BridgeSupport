@@ -1,0 +1,83 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+  <cftype name='SCBondStatusRef' gettypeid_func='SCBondStatusGetTypeID'/>
+  <cftype name='SCDynamicStoreRef' gettypeid_func='SCDynamicStoreGetTypeID'/>
+  <cftype name='SCNetworkConnectionRef' gettypeid_func='SCNetworkConnectionGetTypeID'/>
+  <cftype name='SCNetworkInterfaceRef' gettypeid_func='SCNetworkInterfaceGetTypeID'/>
+  <cftype name='SCNetworkProtocolRef' gettypeid_func='SCNetworkProtocolGetTypeID'/>
+  <cftype name='SCNetworkReachabilityRef' gettypeid_func='SCNetworkReachabilityGetTypeID'/>
+  <cftype name='SCNetworkServiceRef' gettypeid_func='SCNetworkServiceGetTypeID'/>
+  <cftype name='SCNetworkSetRef' gettypeid_func='SCNetworkSetGetTypeID'/>
+  <cftype name='SCPreferencesRef' gettypeid_func='SCPreferencesGetTypeID'/>
+  <struct name='SCDynamicStoreContext'/>
+  <struct name='SCNetworkConnectionContext'/>
+  <struct name='SCNetworkReachabilityContext'/>
+  <struct name='SCPreferencesContext'/>
+  <function name='DHCPClientPreferencesCopyApplicationOptions'>
+    <arg index='1' type_modifier='o'/>
+    <retval c_array_length_in_arg='1'/>
+  </function>
+  <function name='DHCPClientPreferencesSetApplicationOptions'>
+    <arg index='1' type_modifier='n' c_array_length_in_arg='2'/>
+  </function>
+  <function name='SCDynamicStoreCopyComputerName'>
+    <arg index='1' type_modifier='o'/>
+  </function>
+  <function name='SCDynamicStoreCopyConsoleUser'>
+    <arg index='1' type_modifier='o'/>
+    <arg index='2' type_modifier='o'/>
+  </function>
+  <function name='SCDynamicStoreCreate'>
+    <arg index='2' type_modifier='n'/>
+    <arg index='3' type_modifier='n'/>
+  </function>
+  <function name='SCDynamicStoreCreateWithOptions'>
+    <arg index='3' type_modifier='n'/>
+    <arg index='4' type_modifier='n'/>
+  </function>
+  <function name='SCNetworkCheckReachabilityByAddress'>
+    <arg index='0' type_modifier='n'/>
+    <arg index='2' type_modifier='o'/>
+  </function>
+  <function name='SCNetworkCheckReachabilityByName'>
+    <arg index='1' type_modifier='o'/>
+  </function>
+  <function name='SCNetworkConnectionCopyUserPreferences'>
+    <arg index='1' type_modifier='o'/>
+    <arg index='2' type_modifier='o'/>
+  </function>
+  <function name='SCNetworkConnectionCreateWithServiceID'>
+    <arg index='2' type_modifier='n'/>
+    <arg index='3' type_modifier='n'/>
+  </function>
+  <function name='SCNetworkInterfaceCopyMediaOptions'>
+    <arg index='1' type_modifier='o'/>
+    <arg index='2' type_modifier='o'/>
+    <arg index='3' type_modifier='o'/>
+  </function>
+  <function name='SCNetworkInterfaceCopyMTU'>
+    <arg index='1' type_modifier='o'/>
+    <arg index='2' type_modifier='o'/>
+    <arg index='3' type_modifier='o'/>
+  </function>
+  <function name='SCNetworkReachabilityCreateWithAddress'>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='SCNetworkReachabilityCreateWithAddressPair'>
+    <arg index='1' type_modifier='n'/>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <function name='SCNetworkReachabilityGetFlags'>
+    <arg index='1' type_modifier='o'/>
+  </function>
+  <function name='SCNetworkReachabilitySetCallback'>
+    <arg index='1' type_modifier='n'/>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <function name='SCPreferencesSetCallback'>
+    <arg index='1' type_modifier='n'/>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <constant name='kSCNetworkInterfaceIPv4' declared_type='SCNetworkInterfaceRef' const='true' type='^{__SCNetworkInterface=}'/>
+</signatures>

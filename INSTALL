@@ -1,0 +1,16 @@
+Installation
+============
+
+On SnowLeopard and later:
+
+make
+sudo make install
+
+This will build 64-bit (x86_64) by default.  To build both 32 and 64-bit:
+
+make RC_ARCHS='i386 x86_64'
+
+To install to a different partition than the root partition or to a
+subdirectory:
+
+sudo make install DESTDIR=/Volumes/Other

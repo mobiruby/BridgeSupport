@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <cftype name="DRBurnSessionRef" gettypeid_func="DRBurnSessionGetTypeID" ignore_tollfree="true"/>
+  <cftype name="DREraseSessionRef" gettypeid_func="DREraseSessionGetTypeID" ignore_tollfree="true"/>
+  <struct name="DRBurnSessionProgressCallbacks"/>
+  <struct name="DRBurnSessionProgressDialogOptions"/>
+  <struct name="DRBurnSessionSetupCallbacks"/>
+  <struct name="DRBurnSessionSetupDialogOptions"/>
+  <struct name="DREraseSessionProgressCallbacks"/>
+  <struct name="DREraseSessionProgressDialogOptions"/>
+  <struct name="DREraseSessionSetupCallbacks"/>
+  <struct name="DREraseSessionSetupDialogOptions"/>
+  <function name="DRBurnSessionBeginProgressDialog">
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="DRBurnSessionSetupDialog">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="DREraseSessionBeginProgressDialog">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="DREraseSessionSetupDialog">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <class name="DRSetupPanel">
+    <method selector="beginSetupSheetForWindow:modalDelegate:didEndSelector:contextInfo:">
+      <arg sel_of_type="(void)setupPanelDidEnd:(DRSetupPanel*)panel returnCode:(int)returnCode contextInfo:(void*)contextInfo" index="2"/>
+      <arg index="3" type_modifier="n"/>
+    </method>
+  </class>
+  <class name="NSObject">
+    <method selector="setupPanel:deviceContainsSuitableMedia:promptString:">
+      <arg index="2" type_modifier="o"/>
+    </method>
+  </class>
+</signatures>

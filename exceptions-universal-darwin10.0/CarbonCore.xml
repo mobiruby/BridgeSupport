@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+  <ignored_headers>
+    <header>AIFF.h</header>
+    <header>AVLTree.h</header>
+    <header>Aliases.h</header>
+    <header>BackupCore.h</header>
+    <header>CarbonCore.h</header>
+    <header>CodeFragments.h</header>
+    <header>Collections.h</header>
+    <header>Components.h</header>
+    <header>ConditionalMacros.h</header>
+    <header>DateTimeUtils.h</header>
+    <header>Debugging.h</header>
+    <header>DriverServices.h</header>
+    <header>DriverSynchronization.h</header>
+    <header>Endian.h</header>
+    <header>Files.h</header>
+    <header>Finder.h</header>
+    <header>FixMath.h</header>
+    <header>Folders.h</header>
+    <header>Gestalt.h</header>
+    <header>HFSVolumes.h</header>
+    <header>IntlResources.h</header>
+    <header>LowMem.h</header>
+    <header>MacLocales.h</header>
+    <header>MacMemory.h</header>
+    <header>MacTypes.h</header>
+    <header>MachineExceptions.h</header>
+    <header>Math64.h</header>
+    <header>MixedMode.h</header>
+    <header>Multiprocessing.h</header>
+    <header>MultiprocessingInfo.h</header>
+    <header>NumberFormatting.h</header>
+    <header>OSUtils.h</header>
+    <header>PEFBinaryFormat.h</header>
+    <header>PLStringFuncs.h</header>
+    <header>Resources.h</header>
+    <header>Script.h</header>
+    <header>StringCompare.h</header>
+    <header>TextCommon.h</header>
+    <header>TextEncodingConverter.h</header>
+    <header>TextEncodingPlugin.h</header>
+    <header>TextUtils.h</header>
+    <header>Threads.h</header>
+    <header>Timer.h</header>
+    <header>ToolUtils.h</header>
+    <header>UTCUtils.h</header>
+    <header>UnicodeConverter.h</header>
+    <header>UnicodeUtilities.h</header>
+    <header>fp.h</header>
+  </ignored_headers>
+  <opaque name='ConstFSEventStreamRef'/>
+  <opaque name='FSEventStreamRef'/>
+  <struct name='FSEventStreamContext'/>
+  <function name='FSEventStreamCreate'>
+    <arg index='0' type_modifier='n'/>
+    <arg index='1' type_modifier='n'/>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <function name='FSEventStreamCreateRelativeToDevice'>
+    <arg index='0' type_modifier='n'/>
+    <arg index='1' type_modifier='n'/>
+    <arg index='2' type_modifier='n'/>
+    <arg index='4' type_modifier='n'/>
+  </function>
+  <function name='FSEventStreamScheduleWithRunLoop'>
+    <arg index='1' type_modifier='n'/>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <function name='FSEventStreamUnscheduleFromRunLoop'>
+    <arg index='1' type_modifier='n'/>
+    <arg index='2' type_modifier='n'/>
+  </function>
+</signatures>

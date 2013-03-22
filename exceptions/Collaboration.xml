@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <class name="CBIdentityPicker">
+    <method selector="runModalForWindow:modalDelegate:didEndSelector:contextInfo:">
+      <arg sel_of_type="(void)identityPickerDidEnd:(CBIdentityPicker *)identityPicker returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo" index="2"/>
+      <arg index="3" type_modifier="n"/>
+    </method>
+  </class>
+</signatures>

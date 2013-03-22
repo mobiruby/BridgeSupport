@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <struct name="ICD_ObjectSendMessagePB"/>
+  <struct name="ICD_ScannerCloseSessionPB"/>
+  <struct name="ICD_ScannerGetParametersPB"/>
+  <struct name="ICD_ScannerInitializePB"/>
+  <struct name="ICD_ScannerObjectSendMessagePB"/>
+  <struct name="ICD_ScannerOpenSessionPB"/>
+  <struct name="ICD_ScannerSetParametersPB"/>
+  <struct name="ICD_ScannerStartPB"/>
+  <struct name="ICD_ScannerStatusPB"/>
+  <struct name="ICD_callback_functions"/>
+  <struct name="ICD_scanner_callback_functions"/>
+  <struct name="ObjectInfo"/>
+  <struct name="ScannerObjectInfo"/>
+  <function name="ICDAddImageInfoToNotificationDictionary">
+    <arg c_array_length_in_arg="6" index="7" type_modifier="n"/>
+  </function>
+  <function name="ICDCopyDeviceInfoDictionary">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="ICDCreateEventDataCookie">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="ICDCreateICAThumbnailFromICNS">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="ICDCreateICAThumbnailFromIconRef">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="ICDGetStandardPropertyData">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="ICDInitiateNotificationCallback">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="ICDNewObjectCreated">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="ICDNewObjectInfoCreated">
+    <arg index="0" type_modifier="n"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="ICDScannerCopyDeviceInfoDictionary">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="ICDScannerCreateEventDataCookie">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="ICDScannerCreateICAThumbnailFromICNS">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="ICDScannerGetStandardPropertyData">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="ICDScannerInitiateNotificationCallback">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="ICDScannerNewObjectInfoCreated">
+    <arg index="0" type_modifier="n"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="ICDSendNotification">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="ICDSendNotificationAndWaitForReply">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="ICD_ScannerMain">
+    <arg index="1" type_modifier="n" c_array_length_in_arg='0'/>
+  </function>
+  <function name="ICD_main">
+    <arg index="1" type_modifier="n" c_array_length_in_arg='0'/>
+  </function>
+</signatures>

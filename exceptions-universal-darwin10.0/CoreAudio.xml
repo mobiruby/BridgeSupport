@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <struct name="AudioBuffer"/>
+  <struct name="AudioBufferList"/>
+  <struct name="AudioChannelDescription"/>
+  <struct name="AudioChannelLayout"/>
+  <struct name="AudioClassDescription"/>
+  <struct name="AudioDriverPlugInHostInfo"/>
+  <struct name="AudioHardwareIOProcStreamUsage"/>
+  <struct name="AudioHardwarePlugInInterface"/>
+  <struct name="AudioObjectPropertyAddress"/>
+  <struct name="AudioStreamBasicDescription"/>
+  <struct name="AudioStreamPacketDescription"/>
+  <struct name="AudioStreamRangedDescription"/>
+  <struct name="AudioTimeStamp"/>
+  <struct name="AudioValueRange"/>
+  <struct name="AudioValueTranslation"/>
+  <struct name="SMPTETime"/>
+  <function name="AudioDeviceAddPropertyListener">
+    <arg index="4" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+  </function>
+  <function name="AudioDeviceGetCurrentTime">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="AudioDeviceGetNearestStartTime">
+    <arg index="1" type_modifier="N"/>
+  </function>
+  <function name="AudioDeviceGetProperty">
+    <arg index="4" type_modifier="N"/>
+    <arg index="5" type_modifier="o"/>
+  </function>
+  <function name="AudioDeviceGetPropertyInfo">
+    <arg index="4" type_modifier="o"/>
+    <arg index="5" type_modifier="o"/>
+  </function>
+  <function name="AudioDeviceSetProperty">
+    <arg index="1" type_modifier="n"/>
+    <arg index="6" type_modifier="n"/>
+  </function>
+  <function name="AudioDeviceStartAtTime">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="N"/>
+  </function>
+  <function name="AudioDeviceTranslateTime">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="AudioDriverPlugInDeviceGetProperty">
+    <arg index="4" type_modifier="N"/>
+    <arg index="5" type_modifier="o"/>
+  </function>
+  <function name="AudioDriverPlugInDeviceGetPropertyInfo">
+    <arg index="4" type_modifier="o"/>
+    <arg index="5" type_modifier="o"/>
+  </function>
+  <function name="AudioDriverPlugInDeviceSetProperty">
+    <arg index="1" type_modifier="n"/>
+    <arg index="6" type_modifier="n"/>
+  </function>
+  <function name="AudioDriverPlugInOpen">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="AudioDriverPlugInStreamGetProperty">
+    <arg index="4" type_modifier="N"/>
+    <arg index="5" type_modifier="o"/>
+  </function>
+  <function name="AudioDriverPlugInStreamGetPropertyInfo">
+    <arg index="4" type_modifier="o"/>
+    <arg index="5" type_modifier="o"/>
+  </function>
+  <function name="AudioDriverPlugInStreamSetProperty">
+    <arg index="2" type_modifier="n"/>
+    <arg index="6" type_modifier="n"/>
+  </function>
+  <function name="AudioHardwareAddPropertyListener">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="AudioHardwareGetProperty">
+    <arg index="1" type_modifier="N"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="AudioHardwareGetPropertyInfo">
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="AudioHardwareSetProperty">
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="AudioObjectAddPropertyListener">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="AudioObjectCreate">
+    <arg index="0" type_modifier="o"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="AudioObjectGetPropertyData">
+    <arg index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="N"/>
+    <arg index="5" type_modifier="o"/>
+  </function>
+  <function name="AudioObjectGetPropertyDataSize">
+    <arg index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="o"/>
+  </function>
+  <function name="AudioObjectHasProperty">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="AudioObjectIsPropertySettable">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="AudioObjectPropertiesChanged">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="2" index="3" type_modifier="n"/>
+  </function>
+  <function name="AudioObjectRemovePropertyListener">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="AudioObjectSetPropertyData">
+    <arg index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+  </function>
+  <function name="AudioObjectsPublishedAndDied">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="2" index="3" type_modifier="n"/>
+    <arg c_array_length_in_arg="4" index="5" type_modifier="n"/>
+  </function>
+  <function name="AudioStreamAddPropertyListener">
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+  </function>
+  <function name="AudioStreamGetProperty">
+    <arg index="3" type_modifier="N"/>
+    <arg index="4" type_modifier="o"/>
+  </function>
+  <function name="AudioStreamGetPropertyInfo">
+    <arg index="3" type_modifier="o"/>
+    <arg index="4" type_modifier="o"/>
+  </function>
+  <function name="AudioStreamSetProperty">
+    <arg index="1" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+  </function>
+  <function name="AudioDeviceRemovePropertyListener">
+    <arg index="4" type_modifier="n"/>
+  </function>
+  <function name="AudioDeviceStart">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="AudioDeviceStop">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="AudioHardwareRemovePropertyListener">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="AudioStreamRemovePropertyListener">
+    <arg index="3" type_modifier="n"/>
+  </function>
+</signatures>

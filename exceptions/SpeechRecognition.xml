@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <struct name="SRCallBackParam"/>
+  <struct name="SRCallBackStruct"/>
+  <opaque name='SRSpeechObject'/>
+  <function name="InvokeSRCallBackUPP">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="SRAddText">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+  </function>
+  <function name="SRChangeLanguageObject">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+  </function>
+  <function name="SRCountItems">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="SRDrawRecognizedText">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+  </function>
+  <function name="SRDrawText">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+  </function>
+  <function name="SRGetIndexedItem">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="SRGetLanguageModel">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="SRGetProperty">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="3" index="2" type_modifier="o"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="SRGetReference">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="SRNewLanguageModel">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+  </function>
+  <function name="SRNewLanguageObjectFromDataFile">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="SRNewLanguageObjectFromHandle">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="SRNewPath">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="SRNewPhrase">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+  </function>
+  <function name="SRNewRecognizer">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="SRNewWord">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+  </function>
+  <function name="SROpenRecognitionSystem">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRSetProperty">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+  </function>
+  <function name="SRSpeakAndDrawText">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+  </function>
+  <function name="SRSpeakText">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+  </function>
+  <function name="DisposeSRCallBackUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="NewSRCallBackUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRAddLanguageObject">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="SRCancelRecognition">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRCloseRecognitionSystem">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRContinueRecognition">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SREmptyLanguageObject">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRProcessBegin">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRProcessEnd">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRPutLanguageObjectIntoDataFile">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRPutLanguageObjectIntoHandle">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="SRReleaseObject">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRRemoveIndexedItem">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRRemoveLanguageObject">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="SRSetIndexedItem">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="SRSetLanguageModel">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="SRSpeechBusy">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRStartListening">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRStopListening">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SRStopSpeech">
+    <arg index="0" type_modifier="n"/>
+  </function>
+</signatures>

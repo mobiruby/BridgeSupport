@@ -1,0 +1,789 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <struct name="BluetoothDeviceAddress"/>
+  <struct name="BluetoothHCIAutomaticFlushTimeoutInfo"/>
+  <struct name="BluetoothHCIBufferSize"/>
+  <struct name="BluetoothHCICurrentInquiryAccessCodes"/>
+  <struct name="BluetoothHCIEventAuthenticationCompleteResults"/>
+  <struct name="BluetoothHCIEventChangeConnectionLinkKeyCompleteResults"/>
+  <struct name="BluetoothHCIEventConnectionCompleteResults"/>
+  <struct name="BluetoothHCIEventConnectionPacketTypeResults"/>
+  <struct name="BluetoothHCIEventConnectionRequestResults"/>
+  <struct name="BluetoothHCIEventDataBufferOverflowResults"/>
+  <struct name="BluetoothHCIEventDisconnectionCompleteResults"/>
+  <struct name="BluetoothHCIEventEncryptionChangeResults"/>
+  <struct name="BluetoothHCIEventFlushOccurredResults"/>
+  <struct name="BluetoothHCIEventHardwareErrorResults"/>
+  <struct name="BluetoothHCIEventLinkKeyNotificationResults"/>
+  <struct name="BluetoothHCIEventMasterLinkKeyCompleteResults"/>
+  <struct name="BluetoothHCIEventMaxSlotsChangeResults"/>
+  <struct name="BluetoothHCIEventModeChangeResults"/>
+  <struct name="BluetoothHCIEventPageScanModeChangeResults"/>
+  <struct name="BluetoothHCIEventPageScanRepetitionModeChangeResults"/>
+  <struct name="BluetoothHCIEventQoSSetupCompleteResults"/>
+  <struct name="BluetoothHCIEventQoSViolationResults"/>
+  <struct name="BluetoothHCIEventReadClockOffsetResults"/>
+  <struct name="BluetoothHCIEventReadRemoteSupportedFeaturesResults"/>
+  <struct name="BluetoothHCIEventReadRemoteVersionInfoResults"/>
+  <struct name="BluetoothHCIEventReadSupportedFeaturesResults"/>
+  <struct name="BluetoothHCIEventRemoteNameRequestResults"/>
+  <struct name="BluetoothHCIEventReturnLinkKeysResults"/>
+  <struct name="BluetoothHCIEventRoleChangeResults"/>
+  <struct name="BluetoothHCIEventVendorSpecificResults"/>
+  <struct name="BluetoothHCIExtendedInquiryResponse"/>
+  <struct name="BluetoothHCIExtendedInquiryResult"/>
+  <struct name="BluetoothHCIFailedContactInfo"/>
+  <struct name="BluetoothHCIInquiryAccessCode"/>
+  <struct name="BluetoothHCIInquiryResult"/>
+  <struct name="BluetoothHCIInquiryResults"/>
+  <struct name="BluetoothHCIInquiryWithRSSIResult"/>
+  <struct name="BluetoothHCIInquiryWithRSSIResults"/>
+  <struct name="BluetoothHCILinkPolicySettingsInfo"/>
+  <struct name="BluetoothHCILinkQualityInfo"/>
+  <struct name="BluetoothHCILinkSupervisionTimeout"/>
+  <struct name="BluetoothHCIQualityOfServiceSetupParams"/>
+  <struct name="BluetoothHCIRSSIInfo"/>
+  <struct name="BluetoothHCIReadExtendedInquiryResponseResults"/>
+  <struct name="BluetoothHCIReadLocalOOBDataResults"/>
+  <struct name="BluetoothHCIRequestCallbackInfo"/>
+  <struct name="BluetoothHCIRoleInfo"/>
+  <struct name="BluetoothHCIScanActivity"/>
+  <struct name="BluetoothHCISimplePairingOOBData"/>
+  <struct name="BluetoothHCIStoredLinkKeysInfo"/>
+  <struct name="BluetoothHCISupportedFeatures"/>
+  <struct name="BluetoothHCITransmitPowerLevelInfo"/>
+  <struct name="BluetoothHCIVersionInfo"/>
+  <struct name="BluetoothIOCapabilityResponse"/>
+  <struct name="BluetoothKey"/>
+  <struct name="BluetoothL2CAPQualityOfServiceOptions"/>
+  <struct name="BluetoothL2CAPRetransmissionAndFlowControlOptions"/>
+  <struct name="BluetoothPINCode"/>
+  <struct name="BluetoothSetEventMask"/>
+  <struct name="BluetoothTransportInfo"/>
+  <struct name="BluetoothUserPasskeyNotification"/>
+  <struct name="IOBluetoothDeviceSearchAttributes"/>
+  <struct name="IOBluetoothDeviceSearchDeviceAttributes"/>
+  <struct name="IOBluetoothL2CAPChannelDataBlock"/>
+  <struct name="IOBluetoothL2CAPChannelEvent"/>
+  <struct name="IOBluetoothRFCOMMChannelEvent"/>
+  <struct name="IOBluetoothRFCOMMDataBlock"/>
+  <struct name="OBEXAbortCommandData"/>
+  <struct name="OBEXAbortCommandResponseData"/>
+  <struct name="OBEXConnectCommandData"/>
+  <struct name="OBEXConnectCommandResponseData"/>
+  <struct name="OBEXDisconnectCommandData"/>
+  <struct name="OBEXDisconnectCommandResponseData"/>
+  <struct name="OBEXErrorData"/>
+  <struct name="OBEXGetCommandData"/>
+  <struct name="OBEXGetCommandResponseData"/>
+  <struct name="OBEXPutCommandData"/>
+  <struct name="OBEXPutCommandResponseData"/>
+  <struct name="OBEXSessionEvent"/>
+  <struct name="OBEXSetPathCommandData"/>
+  <struct name="OBEXSetPathCommandResponseData"/>
+  <struct name="OBEXTransportEvent"/>
+  <opaque name="IOBluetoothDeviceInquiryRef"/>
+  <opaque name="IOBluetoothDeviceRef"/>
+  <opaque name="IOBluetoothL2CAPChannelRef"/>
+  <opaque name="IOBluetoothObjectRef"/>
+  <opaque name="IOBluetoothRFCOMMChannelRef"/>
+  <opaque name="IOBluetoothSDPDataElementRef"/>
+  <opaque name="IOBluetoothSDPServiceRecordRef"/>
+  <opaque name="IOBluetoothSDPUUIDRef"/>
+  <opaque name="IOBluetoothUserNotificationRef"/>
+  <opaque name="OBEXFileTransferServicesRef"/>
+  <opaque name="OBEXSessionRef"/>
+  <function name="IOBluetoothAddServiceDict">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothDeviceCreateWithAddress">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceOpenConnection">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceOpenConnectionWithOptions">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceOpenL2CAPChannelAsync">
+    <arg index="1" type_modifier="o"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceOpenL2CAPChannelSync">
+    <arg index="1" type_modifier="o"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceOpenRFCOMMChannelAsync">
+    <arg index="1" type_modifier="o"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceOpenRFCOMMChannelSync">
+    <arg index="1" type_modifier="o"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDevicePerformSDPQuery">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceRegisterForDisconnectNotification">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceRemoteNameRequest">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothDeviceRemoteNameRequestWithTimeout">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothDeviceSendL2CAPEchoRequest">
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothGetVersion">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothL2CAPChannelRegisterForChannelCloseNotification">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothL2CAPChannelRegisterIncomingDataListener">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothL2CAPChannelRegisterIncomingEventListener">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothL2CAPChannelWriteAsync">
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothL2CAPChannelWriteSync">
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceGetDiscoverable">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceGetPowerState">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceReadAddress">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceReadAuthenticationEnable">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceReadClassOfDevice">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceReadConnectionAcceptTimeout">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceReadEncryptionMode">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceReadName">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceReadPageScanMode">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceReadPageScanPeriodMode">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceReadPageTimeout">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceReadScanEnable">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceReadSupportedFeatures">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothLocalDeviceReadVersionInformation">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothOBEXSessionCreateWithIOBluetoothDeviceRefAndChannelNumber">
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothOBEXSessionCreateWithIOBluetoothSDPServiceRecordRef">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothOBEXSessionCreateWithIncomingIOBluetoothRFCOMMChannel">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothOBEXSessionOpenTransportConnection">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothPackData">
+    <arg index="0" type_modifier="N"/>
+  </function>
+  <function name="IOBluetoothPackDataList" ignore="true" suggestion="Use IOBluetoothPackData."/>
+  <function name="IOBluetoothRFCOMMChannelRegisterForChannelCloseNotification">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothRFCOMMChannelRegisterIncomingEventListener">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothRFCOMMChannelWriteAsync">
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothRFCOMMChannelWriteSync">
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothRegisterForDeviceConnectNotifications">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothRegisterForFilteredL2CAPChannelOpenNotifications">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothRegisterForFilteredRFCOMMChannelOpenNotifications">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothRegisterForL2CAPChannelOpenNotifications">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothRegisterForRFCOMMChannelOpenNotifications">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothSDPServiceRecordGetL2CAPPSM">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothSDPServiceRecordGetRFCOMMChannelID">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothSDPServiceRecordGetServiceRecordHandle">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="IOBluetoothSDPUUIDCreateWithBytes">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothUnpackData">
+    <arg c_array_length_in_arg="0" index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothUnpackDataList" ignore="true" suggestion="Use IOBluetoothUnpackData."/>
+  <function name="OBEXAddApplicationParameterHeader">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXAddAuthorizationChallengeHeader">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXAddAuthorizationResponseHeader">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXAddBodyHeader">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXAddByteSequenceHeader">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXAddConnectionIDHeader">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXAddHTTPHeader">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXAddObjectClassHeader">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXAddTargetHeader">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXAddTimeISOHeader">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXAddUserDefinedHeader">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXAddWhoHeader">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXCreateVCard">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+    <arg c_array_length_in_arg="5" index="4" type_modifier="n"/>
+    <arg c_array_length_in_arg="7" index="6" type_modifier="n"/>
+    <arg c_array_length_in_arg="9" index="8" type_modifier="n"/>
+    <arg c_array_length_in_arg="11" index="10" type_modifier="n"/>
+    <arg c_array_length_in_arg="13" index="12" type_modifier="n"/>
+    <arg c_array_length_in_arg="15" index="14" type_modifier="n"/>
+    <arg c_array_length_in_arg="17" index="16" type_modifier="n"/>
+    <arg c_array_length_in_arg="19" index="18" type_modifier="n"/>
+    <arg c_array_length_in_arg="21" index="20" type_modifier="n"/>
+    <arg c_array_length_in_arg="23" index="22" type_modifier="n"/>
+    <arg c_array_length_in_arg="25" index="24" type_modifier="n"/>
+    <arg c_array_length_in_arg="27" index="26" type_modifier="n"/>
+  </function>
+  <function name="OBEXCreateVEvent">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+    <arg c_array_length_in_arg="5" index="4" type_modifier="n"/>
+    <arg c_array_length_in_arg="7" index="6" type_modifier="n"/>
+    <arg c_array_length_in_arg="9" index="8" type_modifier="n"/>
+    <arg c_array_length_in_arg="11" index="10" type_modifier="n"/>
+    <arg c_array_length_in_arg="13" index="12" type_modifier="n"/>
+    <arg c_array_length_in_arg="15" index="14" type_modifier="n"/>
+    <arg c_array_length_in_arg="17" index="16" type_modifier="n"/>
+  </function>
+  <function name="OBEXGetHeaders">
+    <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionAbort">
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionAbortResponse">
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionConnect">
+    <arg c_array_length_in_arg="4" index="3" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+    <arg index="6" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionConnectResponse">
+    <arg c_array_length_in_arg="5" index="4" type_modifier="n"/>
+    <arg index="6" type_modifier="n"/>
+    <arg index="7" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionDisconnect">
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionDisconnectResponse">
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionGet">
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionGetAvailableCommandPayloadLength">
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="OBEXSessionGetAvailableCommandResponsePayloadLength">
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="OBEXSessionGetMaxPacketLength">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="OBEXSessionGetResponse">
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionHasOpenOBEXConnection">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="OBEXSessionPut">
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+    <arg c_array_length_in_arg="5" index="4" type_modifier="n"/>
+    <arg index="6" type_modifier="n"/>
+    <arg index="7" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionPutResponse">
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionSetPath">
+    <arg c_array_length_in_arg="4" index="3" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+    <arg index="6" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionSetPathResponse">
+    <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+  </function>
+  <function name="OBEXSessionSetServerCallback">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceInquiryCreateWithCallbackRefCon">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceInquirySetCompleteCallback">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceInquirySetDeviceFoundCallback">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceInquirySetDeviceNameUpdatedCallback">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceInquirySetStartedCallback">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceInquirySetUpdatingNamesStartedCallback">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothDeviceInquirySetUserRefCon">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="IOBluetoothGetObjectIDFromArguments">
+    <arg index="1" type_modifier="n" c_array_length_in_arg='0'/>
+  </function>
+  <class name="IOBluetoothDevice">
+    <method selector="openL2CAPChannel:findExisting:newChannel:">
+      <arg index="2" type_modifier="o"/>
+    </method>
+    <method selector="openL2CAPChannelAsync:withPSM:delegate:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+    <method selector="openL2CAPChannelSync:withPSM:delegate:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+    <method selector="openRFCOMMChannel:channel:">
+      <arg index="1" type_modifier="o"/>
+    </method>
+    <method selector="openRFCOMMChannelAsync:withChannelID:delegate:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+    <method selector="openRFCOMMChannelSync:withChannelID:delegate:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+    <method class_method='true' selector='registerForConnectNotifications:selector:'>
+      <arg index='1' sel_of_type="(void)notification:(id)notif device:(id)device"/>
+    </method>
+    <method selector='registerForDisconnectNotification:selector:'>
+      <arg index='1' sel_of_type="(void)notification:(id)notif device:(id)device"/>
+    </method>
+    <method selector="sendL2CAPEchoRequest:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method class_method="true" selector="withAddress:">
+      <arg index="0" type_modifier="n"/>
+    </method>
+  </class>
+  <class name="IOBluetoothHostController">
+    <method selector="getAddress:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+    <method selector="getSupportedFeatures:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+  </class>
+  <class name="IOBluetoothL2CAPChannel">
+    <method selector='registerForChannelCloseNotification:selector:'>
+      <arg index='1' sel_of_type="(void)notification:(id)notif device:(id)device"/>
+    </method>
+    <method class_method='true' selector='registerForChannelOpenNotifications:selector:withPSM:direction:'>
+      <arg index='1' sel_of_type="(void)notification:(id)notif device:(id)device"/>
+    </method>
+    <method class_method='true' selector='registerForChannelOpenNotifications:selector:'>
+      <arg index='1' sel_of_type="(void)notification:(id)notif device:(id)device"/>
+    </method>
+    <method class_method='true' selector='registerForChannelOpenNotifications:selector:withPSM:direction:'>
+      <arg index='1' sel_of_type="(void)notification:(id)notif device:(id)device"/>
+    </method>
+    <method class_method='true' selector='registerForChannelOpenNotifications:selector:withPSM:direction:'>
+      <arg index='1' sel_of_type="(void)notification:(id)notif device:(id)device"/>
+    </method>
+    <method selector="registerIncomingDataListener:refCon:">
+      <arg index="0" type_modifier="n"/>
+      <arg index="1" type_modifier="n"/>
+    </method>
+    <method selector="write:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="writeAsync:length:refcon:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+      <arg index="2" type_modifier="n"/>
+    </method>
+    <method selector="writeSync:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+  </class>
+  <class name="IOBluetoothOBEXSession">
+    <method selector="initWithIncomingRFCOMMChannel:eventSelector:selectorTarget:refCon:">
+      <arg index='1' sel_of_type="(void)event:(id)sender"/>
+      <arg index="3" type_modifier="n"/>
+    </method>
+    <method selector="openTransportConnection:selectorTarget:refCon:">
+      <arg sel_of_type="(void)transportConnectionSelector:(id)refcon status:(OBEXError)status" index="0"/>
+      <arg index="2" type_modifier="n"/>
+    </method>
+    <method selector="sendDataToTransport:dataLength:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="setOBEXSessionOpenConnectionCallback:refCon:">
+      <arg index="0" type_modifier="n"/>
+      <arg index="1" type_modifier="n"/>
+    </method>
+    <method selector="setOpenTransportConnectionAsyncSelector:target:refCon:">
+      <arg sel_of_type="(void)transportConnectionSelector:(id)refcon status:(OBEXError)status" index="0"/>
+      <arg index="2" type_modifier="n"/>
+    </method>
+    <method class_method="true" selector="withIncomingRFCOMMChannel:eventSelector:selectorTarget:refCon:">
+      <arg index='1' sel_of_type="(void)event:(id)sender"/>
+      <arg index="3" type_modifier="n"/>
+    </method>
+  </class>
+  <class name="IOBluetoothRFCOMMAudioController">
+    <method selector="rfcommChannelData:data:length:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+    </method>
+    <method selector="sendRFCOMMData:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+  </class>
+  <class name="IOBluetoothRFCOMMChannel">
+    <method selector='registerForChannelCloseNotification:selector:'>
+      <arg index='1' sel_of_type="(void)notification:(id)notif device:(id)device"/>
+    </method>
+    <method class_method='true' selector='registerForChannelOpenNotifications:selector:'>
+      <arg index='1' sel_of_type="(void)notification:(id)notif device:(id)device"/>
+    </method>
+    <method class_method='true' selector='registerForChannelOpenNotifications:selector:withChannelID:direction:'>
+      <arg index='1' sel_of_type="(void)notification:(id)notif device:(id)device"/>
+    </method>
+    <method selector="registerIncomingDataListener:refCon:">
+      <arg index="0" type_modifier="n"/>
+      <arg index="1" type_modifier="n"/>
+    </method>
+    <method selector="registerIncomingEventListener:refCon:">
+      <arg index="0" type_modifier="n"/>
+      <arg index="1" type_modifier="n"/>
+    </method>
+    <method selector="write:length:sleep:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="writeAsync:length:refcon:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+      <arg index="2" type_modifier="n"/>
+    </method>
+    <method selector="writeSimple:length:sleep:bytesSent:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+      <arg index="3" type_modifier="o"/>
+    </method>
+    <method selector="writeSync:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+  </class>
+  <class name="IOBluetoothSDPServiceRecord">
+    <method selector="getL2CAPPSM:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+    <method selector="getRFCOMMChannelID:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+    <method selector="getServiceRecordHandle:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+  </class>
+  <class name="IOBluetoothSDPUUID">
+    <method selector="initWithBytes:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method class_method="true" selector="uuidWithBytes:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+  </class>
+  <class name="NSMutableDictionary">
+    <method selector="addApplicationParameterHeader:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="addAuthorizationChallengeHeader:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="addAuthorizationResponseHeader:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="addBodyHeader:length:endOfBody:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="addByteSequenceHeader:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="addConnectionIDHeader:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="addHTTPHeader:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="addImageDescriptorHeader:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="addObjectClassHeader:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="addTargetHeader:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="addTimeISOHeader:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="addUserDefinedHeader:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="addWhoHeader:length:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method class_method="true" selector="dictionaryWithOBEXHeadersData:headersDataSize:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method class_method="true" selector="withOBEXHeadersData:headersDataSize:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+  </class>
+  <class name="NSObject">
+    <method selector="l2capChannelData:data:length:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="o"/>
+    </method>
+    <method selector="l2capChannelWriteComplete:refcon:status:">
+      <arg index="1" type_modifier="n"/>
+    </method>
+    <method selector="rfcommChannelData:data:length:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="o"/>
+    </method>
+    <method selector="rfcommChannelWriteComplete:refcon:status:">
+      <arg index="1" type_modifier="o"/>
+    </method>
+  </class>
+  <class name="OBEXSession">
+    <method selector="OBEXAbort:optionalHeadersLength:eventSelector:selectorTarget:refCon:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+      <arg sel_of_type="(void)OBEXHandler:(const OBEXSessionEvent*)inSessionEvent" index="2"/>
+      <arg index="4" type_modifier="n"/>
+    </method>
+    <method selector="OBEXAbortResponse:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+      <arg sel_of_type="(void)OBEXHandler:(const OBEXSessionEvent*)inSessionEvent" index="3"/>
+      <arg index="5" type_modifier="n"/>
+    </method>
+    <method selector="OBEXConnect:maxPacketLength:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:">
+      <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+      <arg sel_of_type="(void)OBEXHandler:(const OBEXSessionEvent*)inSessionEvent" index="4"/>
+      <arg index="6" type_modifier="n"/>
+    </method>
+    <method selector="OBEXConnectResponse:flags:maxPacketLength:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:">
+      <arg c_array_length_in_arg="4" index="3" type_modifier="n"/>
+      <arg sel_of_type="(void)OBEXHandler:(const OBEXSessionEvent*)inSessionEvent" index="5"/>
+      <arg index="7" type_modifier="n"/>
+    </method>
+    <method selector="OBEXDisconnect:optionalHeadersLength:eventSelector:selectorTarget:refCon:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+      <arg sel_of_type="(void)OBEXHandler:(const OBEXSessionEvent*)inSessionEvent" index="2"/>
+      <arg index="4" type_modifier="n"/>
+    </method>
+    <method selector="OBEXDisconnectResponse:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+      <arg sel_of_type="(void)OBEXHandler:(const OBEXSessionEvent*)inSessionEvent" index="3"/>
+      <arg index="5" type_modifier="n"/>
+    </method>
+    <method selector="OBEXGet:headers:headersLength:eventSelector:selectorTarget:refCon:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+      <arg sel_of_type="(void)OBEXHandler:(const OBEXSessionEvent*)inSessionEvent" index="3"/>
+      <arg index="5" type_modifier="n"/>
+    </method>
+    <method selector="OBEXGetResponse:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+      <arg sel_of_type="(void)OBEXHandler:(const OBEXSessionEvent*)inSessionEvent" index="3"/>
+      <arg index="5" type_modifier="n"/>
+    </method>
+    <method selector="OBEXPut:headersData:headersDataLength:bodyData:bodyDataLength:eventSelector:selectorTarget:refCon:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+      <arg c_array_length_in_arg="4" index="3" type_modifier="n"/>
+      <arg sel_of_type="(void)OBEXHandler:(const OBEXSessionEvent*)inSessionEvent" index="5"/>
+      <arg index="7" type_modifier="n"/>
+    </method>
+    <method selector="OBEXPutResponse:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+      <arg sel_of_type="(void)OBEXHandler:(const OBEXSessionEvent*)inSessionEvent" index="3"/>
+      <arg index="5" type_modifier="n"/>
+    </method>
+    <method selector="OBEXSetPath:constants:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:">
+      <arg c_array_length_in_arg="3" index="2" type_modifier="n"/>
+      <arg sel_of_type="(void)OBEXHandler:(const OBEXSessionEvent*)inSessionEvent" index="4"/>
+      <arg index="6" type_modifier="n"/>
+    </method>
+    <method selector="OBEXSetPathResponse:optionalHeaders:optionalHeadersLength:eventSelector:selectorTarget:refCon:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+      <arg sel_of_type="(void)OBEXHandler:(const OBEXSessionEvent*)inSessionEvent" index="3"/>
+      <arg index="5" type_modifier="n"/>
+    </method>
+    <method selector="clientHandleIncomingData:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+    <method selector="openTransportConnection:selectorTarget:refCon:">
+      <arg sel_of_type="(void)transportConnectionSelector:(id)refcon status:(OBEXError)status" index="0"/>
+      <arg index="2" type_modifier="n"/>
+    </method>
+    <method selector="sendDataToTransport:dataLength:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method selector="serverHandleIncomingData:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+    <method selector="setEventRefCon:">
+      <arg index="0" type_modifier="n"/>
+    </method>
+    <method selector='setEventSelector:target:refCon:'>
+      <arg index='0' sel_of_type="(void)event:(id)sender"/>
+    </method>
+  </class>
+</signatures>

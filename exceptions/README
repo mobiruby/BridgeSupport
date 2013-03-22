@@ -1,0 +1,11 @@
+List of frameworks without exceptions (because nothing to describe):
+
+- AppleScriptKit
+- CoreAudioKit
+- ExceptionHandling
+- PDFKit
+- PreferencePanes
+- ScreenSaver
+- SenTestingKit
+- SyncServices
+- XgridFoundation

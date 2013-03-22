@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <struct name="tAccessControlEntry"/>
+  <struct name="tAttributeEntry"/>
+  <struct name="tAttributeValueEntry"/>
+  <struct name="tDataBuffer"/>
+  <struct name="tDataList"/>
+  <struct name="tRecordEntry"/>
+  <function name="dsAllocAttributeValueEntry">
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="dsAllocStringsFromList">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsBuildListFromStringsAllocV">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsCreateRecordAndOpen">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="dsDataListCopyList">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsDataListGetNodeAlloc">
+    <arg index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="dsDataListGetNodeCount">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="dsDoAttributeValueSearch">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+    <arg index="6" type_modifier="n"/>
+    <arg index="7" type_modifier="n"/>
+  </function>
+  <function name="dsDoAttributeValueSearchWithData">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+    <arg index="6" type_modifier="n"/>
+    <arg index="8" type_modifier="n"/>
+    <arg index="9" type_modifier="n"/>
+  </function>
+  <function name="dsDoDirNodeAuth">
+	  <arg index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="o"/>
+    <arg index="5" type_modifier="n"/>
+  </function>
+  <function name="dsDoDirNodeAuthOnRecordType">
+    <arg index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="o"/>
+    <arg index="5" type_modifier="N"/>
+    <arg index="6" type_modifier="n"/>
+  </function>
+  <function name="dsDoMultipleAttributeValueSearch">
+    <arg index="1" type_modifier="N"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+    <arg index="6" type_modifier="N"/>
+    <arg index="7" type_modifier="N"/>
+  </function>
+  <function name="dsDoMultipleAttributeValueSearchWithData">
+    <arg index="1" type_modifier="N"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+    <arg index="6" type_modifier="n"/>
+    <arg index="8" type_modifier="N"/>
+    <arg index="9" type_modifier="N"/>
+  </function>
+  <function name="dsFindDirNodes">
+    <arg index="1" type_modifier="N"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+    <arg index="5" type_modifier="N"/>
+  </function>
+  <function name="dsGetAttributeEntry">
+    <arg index="1" type_modifier="N"/>
+    <arg index="4" type_modifier="o"/>
+    <arg index="5" type_modifier="o"/>
+  </function>
+  <function name="dsGetAttributeValue">
+    <arg index="1" type_modifier="N"/>
+    <arg index="4" type_modifier="o"/>
+  </function>
+  <function name="dsGetDataLength">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="dsGetDirNodeCount">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="dsGetDirNodeCountWithInfo">
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="dsGetDirNodeInfo">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="N"/>
+    <arg index="4" type_modifier="o"/>
+    <arg index="5" type_modifier="o"/>
+    <arg index="6" type_modifier="N"/>
+  </function>
+  <function name="dsGetDirNodeList">
+    <arg index="1" type_modifier="N"/>
+    <arg index="2" type_modifier="o"/>
+    <arg index="3" type_modifier="N"/>
+  </function>
+  <function name="dsGetDirNodeName">
+    <arg index="1" type_modifier="N"/>
+    <arg index="3" type_modifier="N"/>
+  </function>
+  <function name="dsGetPathFromList">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsGetRecordAttributeInfo">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="dsGetRecordAttributeValueByID">
+    <arg index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="dsGetRecordAttributeValueByIndex">
+    <arg index="1" type_modifier="n"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="dsGetRecordAttributeValueByValue">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="dsGetRecordEntry">
+    <arg index="1" type_modifier="N"/>
+    <arg index="3" type_modifier="o"/>
+    <arg index="4" type_modifier="o"/>
+  </function>
+  <function name="dsGetRecordList">
+    <arg index="1" type_modifier="N"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+    <arg index="5" type_modifier="n"/>
+    <arg index="7" type_modifier="N"/>
+    <arg index="8" type_modifier="N"/>
+  </function>
+  <function name="dsGetRecordReferenceInfo">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="dsOpenDirNode">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="dsOpenDirService">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="dsOpenDirServiceProxy">
+    <arg index="0" type_modifier="o"/>
+    <arg index="3" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+    <arg index="5" type_modifier="o"/>
+    <arg index="6" type_modifier="N"/>
+  </function>
+  <function name="dsOpenRecord">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="dsParseAuthAuthority">
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="o"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="dsAddAttribute">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="dsAddAttributeValue">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="dsAppendAuthBuffer">
+    <arg index="0" type_modifier="N"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="dsAppendAuthBufferWithAuthorityAttribute">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+    <arg index="5" type_modifier="N"/>
+  </function>
+  <function name="dsAppendAuthBufferWithAuthorityStrings">
+    <arg index="1" type_modifier="n" c_array_delimited_by_null='true'/>
+    <arg index="2" type_modifier="N"/>
+  </function>
+  <function name="dsAppendStringToListAlloc">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsBuildListFromNodesAlloc">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="dsBuildListFromPathAlloc">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsBuildListFromStringsAlloc">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsCreateRecord">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="dsDataBufferDeAllocate">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsDataListDeAllocate">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsDataListDeallocate">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsDataListDeleteThisNode">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsDataListInsertAfter">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="dsDataListMergeListAfter">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsDataNodeAllocateBlock">
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="dsDataNodeDeAllocate">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsDataNodeGetLength">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="dsDataNodeGetSize">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="dsDataNodeSetLength">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="dsDeallocAttributeEntry">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsDeallocAttributeValueEntry">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsDeallocRecordEntry">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsDoPlugInCustomCall">
+    <arg index="2" type_modifier="n"/>
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="dsFillAuthBuffer">
+    <arg index="0" type_modifier="N"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="dsGetNextAttributeEntry">
+    <arg index="1" type_modifier="N"/>
+    <arg index="4" type_modifier="N"/>
+    <arg index="5" type_modifier="o"/>
+    <arg index="6" type_modifier="o"/>
+  </function>
+  <function name="dsGetNextAttributeValue">
+    <arg index="1" type_modifier="N"/>
+    <arg index="3" type_modifier="N"/>
+    <arg index="5" type_modifier="o"/>
+  </function>
+  <function name="dsGetRecordNameFromEntry">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="dsGetRecordTypeFromEntry">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="dsOpenDirServiceLocal">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="dsReleaseContinueData">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsRemoveAttribute">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsRemoveAttributeValue">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsServiceInformationAllocate">
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="dsSetAttributeValue">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="dsSetAttributeValues">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="dsSetRecordName">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="dsSetRecordType">
+    <arg index="1" type_modifier="n"/>
+  </function>
+</signatures>

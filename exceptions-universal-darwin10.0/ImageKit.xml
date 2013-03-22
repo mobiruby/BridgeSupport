@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <ignored_headers>
+    <header>ImageKitDeprecated.h</header>
+  </ignored_headers>
+  <class name="IKFilterBrowserPanel">
+    <method selector="beginSheetWithOptions:modalForWindow:modalDelegate:didEndSelector:contextInfo:">
+      <arg index="3" sel_of_type="(void)openPanelDidEnd:(NSOpenPanel *)panel returnCode:(int)returnCode contextInfo:(void *)contextInfo"/>
+      <arg index="4" type_modifier="n"/>
+    </method>
+    <method selector="beginWithOptions:modelessDelegate:didEndSelector:contextInfo:">
+      <arg index="2" sel_of_type="(void)openPanelDidEnd:(NSOpenPanel *)panel returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo"/>
+      <arg index="3" type_modifier="n"/>
+    </method>
+  </class>
+  <class name="IKPictureTaker">
+    <method selector="beginPictureTakerSheetForWindow:withDelegate:didEndSelector:contextInfo:">
+      <arg index="2" sel_of_type="(void)openPanelDidEnd:(NSOpenPanel *)panel returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo"/>
+      <arg index="3" type_modifier="n"/>
+    </method>
+    <method selector="beginPictureTakerWithDelegate:didEndSelector:contextInfo:">
+      <arg index="1" sel_of_type="(void)openPanelDidEnd:(NSOpenPanel *)panel returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo"/>
+      <arg index="2" type_modifier="n"/>
+    </method>
+    <method selector="popUpRecentsMenuForView:withDelegate:didEndSelector:contextInfo:">
+      <arg index="2" sel_of_type="(void)openPanelDidEnd:(NSOpenPanel *)panel returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo"/>
+      <arg index="3" type_modifier="n"/>
+    </method>
+  </class>
+</signatures>

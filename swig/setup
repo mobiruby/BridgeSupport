@@ -1,0 +1,21 @@
+#! /bin/sh -x
+
+ARCHS='i386 x86_64'
+PROJECT=clang-111.2
+CLANGHOME=/Volumes/XDisk/build/Roots/$PROJECT.roots/$PROJECT~obj
+INCDIR=x86_64/tools/clang/include
+LIBS='LLVMARMAsmParser LLVMARMAsmPrinter LLVMARMCodeGen LLVMARMInfo LLVMAnalysis LLVMArchive LLVMAsmParser LLVMAsmPrinter LLVMBitReader LLVMBitWriter LLVMCodeGen LLVMCore LLVMExecutionEngine LLVMInstCombine LLVMInstrumentation LLVMInterpreter LLVMJIT LLVMLinker LLVMMC LLVMScalarOpts LLVMSelectionDAG LLVMSupport LLVMSystem LLVMTarget LLVMTransformUtils LLVMX86AsmParser LLVMX86AsmPrinter LLVMX86CodeGen LLVMX86Disassembler LLVMX86Info LLVMipa LLVMipo clangAST clangAnalysis clangBasic clangCodeGen clangDriver clangFrontend clangIndex clangLex clangParse clangRewrite clangSema'
+CLANG=`pwd`
+
+mkdir -p lib include
+cd lib
+for lib in $LIBS; do
+    archs=''
+    for arch in $ARCHS; do
+	archs="$archs -arch $arch $CLANGHOME/$arch/Release/lib/lib$lib.a"
+    done
+    lipo -create -output lib$lib.a $archs
+    ranlib lib$lib.a
+done
+cd $CLANGHOME/$INCDIR
+rsync -R `find . -name \*.inc | sed 's,^\./,,'` $CLANG/include

@@ -1,0 +1,88 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+  <cftype name='CTFontCollectionRef' gettypeid_func='CTFontCollectionGetTypeID'/>
+  <cftype name='CTFontDescriptorRef' gettypeid_func='CTFontDescriptorGetTypeID'/> -->
+  <cftype name='CTFontRef' gettypeid_func='CTFontGetTypeID'/> -->
+  <cftype name='CTFrameRef' gettypeid_func='CTFrameGetTypeID'/>
+  <cftype name='CTFramesetterRef' gettypeid_func='CTFramesetterGetTypeID'/>
+  <cftype name='CTGlyphInfoRef' gettypeid_func='CTGlyphInfoGetTypeID'/>
+  <cftype name='CTLineRef' gettypeid_func='CTLineGetTypeID'/>
+  <cftype name='CTParagraphStyleRef' gettypeid_func='CTParagraphStyleGetTypeID'/>
+  <cftype name='CTRunRef' gettypeid_func='CTRunGetTypeID'/>
+  <cftype name='CTTextTabRef' gettypeid_func='CTTextTabGetTypeID'/>
+  <cftype name='CTTypesetterRef' gettypeid_func='CTTypesetterGetTypeID'/>
+  <struct name='CTParagraphStyleSetting'/>
+  <function name='CTFontCollectionCreateMatchingFontDescriptorsSortedWithCallback'>
+    <arg index='1' type_modifier='n'/>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <function name='CTFontCreateCopyWithAttributes'>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <function name='CTFontCreateCopyWithFamily'>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <function name='CTFontCreateCopyWithSymbolicTraits'>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <function name='CTFontCreateWithFontDescriptor'>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <function name='CTFontCreateWithGraphicsFont'>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <function name='CTFontCreateWithName'>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <function name='CTFontCreateWithPlatformFont'>
+    <arg  index='2' type_modifier='n'/>
+  </function>
+  <function name='CTFontGetAdvancesForGlyphs'>
+    <arg index='2' type_modifier='n' c_array_length_in_arg='4'/>
+    <arg index='3' type_modifier='o' c_array_length_in_arg='4'/>
+  </function>
+  <function name='CTFontGetBoundingRectsForGlyphs'>
+    <arg index='2' type_modifier='n' c_array_length_in_arg='4'/>
+    <arg index='3' type_modifier='o' c_array_length_in_arg='4'/>
+  </function>
+  <function name='CTFontGetGlyphsForCharacters'>
+    <arg index='1' type_modifier='n' c_array_length_in_arg='3'/>
+    <arg index='2' type_modifier='o' c_array_length_in_arg='3'/>
+  </function>
+  <function name='CTFontGetVerticalTranslationsForGlyphs'>
+    <arg index='1' type_modifier='n' c_array_length_in_arg='3'/>
+    <arg index='2' type_modifier='o' c_array_length_in_arg='3'/>
+  </function>
+  <function name='CTFrameGetLineOrigins'>
+    <arg index='2' type_modifier='o' c_array_of_variable_length='true'/>
+  </function>
+  <function name='CTLineGetOffsetForStringIndex'>
+    <arg index='2' type_modifier='o'/>
+  </function>
+  <function name='CTLineGetTypographicBounds'>
+    <arg index='1' type_modifier='o'/>
+    <arg index='2' type_modifier='o'/>
+    <arg index='3' type_modifier='o'/>
+  </function>
+  <function name='CTParagraphStyleCreate'>
+    <arg index='0' type_modifier='n' c_array_length_in_arg='1'/>
+  </function>
+  <function name='CTParagraphStyleGetValueForSpecifier'>
+    <arg index='3' type_modifier='o' c_array_length_in_arg='2'/>
+  </function>
+  <function name='CTRunGetGlyphs'>
+    <arg index='2' type_modifier='o' c_array_of_variable_length='true'/>
+  </function>
+  <function name='CTRunGetPositions'>
+    <arg index='2' type_modifier='o' c_array_of_variable_length='true'/>
+  </function>
+  <function name='CTRunGetStringIndices'>
+    <arg index='2' type_modifier='o' c_array_of_variable_length='true'/>
+  </function>
+  <function name='CTRunGetTypographicBounds'>
+    <arg index='2' type_modifier='o'/>
+    <arg index='3' type_modifier='o'/>
+    <arg index='4' type_modifier='o'/>
+  </function>
+</signatures>

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <cftype name="DRBurnRef" gettypeid_func="DRBurnGetTypeID" ignore_tollfree="true"/>
+  <cftype name="DRCDTextBlockRef" gettypeid_func="DRCDTextBlockGetTypeID" ignore_tollfree="true"/>
+  <cftype name="DRDeviceRef" gettypeid_func="DRDeviceGetTypeID" ignore_tollfree="true"/>
+  <cftype name="DREraseRef" gettypeid_func="DREraseGetTypeID" ignore_tollfree="true"/>
+  <cftype name="DRFileRef" gettypeid_func="DRFileGetTypeID" ignore_tollfree="true"/>
+  <cftype name="DRFolderRef" gettypeid_func="DRFolderGetTypeID" ignore_tollfree="true"/>
+  <cftype name="DRNotificationCenterRef" gettypeid_func="DRNotificationCenterGetTypeID" ignore_tollfree="true"/>
+  <cftype name="DRTrackRef" gettypeid_func="DRTrackGetTypeID" ignore_tollfree="true"/>
+  <struct name="DRFileForkSizeInfo"/>
+  <struct name="DRFileProductionInfo"/>
+  <struct name="DRRefConCallbacks"/>
+  <struct name="DRTrackProductionInfo"/>
+  <function name="DRAudioTrackCreate">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DRFSObjectGetFilesystemMask">
+    <arg index="1" type_modifier="o"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="DRFSObjectGetRealFSRef">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="DRFileCreateReal">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DRFileCreateVirtualWithCallback">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="DRFileCreateVirtualWithData">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="DRFolderCreateReal">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DRNotificationCenterAddObserver">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="DRNotificationCenterRemoveObserver">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <function name="DRSetRefCon">
+    <arg index="1" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="DRTrackCreate">
+    <arg index="1" type_modifier="n"/>
+  </function>
+  <class name='DRNotificationCenter'>
+    <method selector='addObserver:selector:name:object:'>
+      <arg index='1' sel_of_type="(void)action:(id)sender"/>
+    </method>
+  </class>
+  <class name="NSObject">
+    <method selector="produceDataForTrack:intoBuffer:length:atAddress:blockSize:ioFlags:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="o"/>
+      <arg index="5" type_modifier="n"/>
+    </method>
+    <method selector="produceFile:fork:intoBuffer:length:atAddress:blockSize:">
+      <arg c_array_length_in_arg="3" index="2" type_modifier="o"/>
+    </method>
+    <method selector="producePreGapForTrack:intoBuffer:length:atAddress:blockSize:ioFlags:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="o"/>
+      <arg index="5" type_modifier="n"/>
+    </method>
+    <method selector="verifyDataForTrack:inBuffer:length:atAddress:blockSize:ioFlags:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+      <arg index="5" type_modifier="n"/>
+    </method>
+    <method selector="verifyPreGapForTrack:inBuffer:length:atAddress:blockSize:ioFlags:">
+      <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+      <arg index="5" type_modifier="n"/>
+    </method>
+  </class>
+</signatures>

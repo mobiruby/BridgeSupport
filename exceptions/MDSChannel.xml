@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <cftype name="MDSChannelAccessTokenRef" gettypeid_func="MDSChannelAccessTokenGetTypeID"/>
+  <cftype name="MDSChannelPeerRef" gettypeid_func="MDSChannelPeerGetTypeID"/>
+  <cftype name="MDSChannelRef" gettypeid_func="MDSChannelGetTypeID"/>
+  <function name="MDSChannelPeerRequest">
+    <arg index="3" type_modifier="o"/>
+  </function>
+  <function name="MDSChannelRequest">
+    <arg index="3" type_modifier="o"/>
+  </function>
+</signatures>

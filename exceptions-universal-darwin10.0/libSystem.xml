@@ -1,0 +1,363 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+  <opaque name='aslclient'/>
+  <opaque name='aslmsg'/>
+  <opaque name='aslresponse'/>
+  <opaque name='copyfile_state_t'/>
+  <opaque name='launch_data_t'/>
+  <function name='CCCryptorCreate'>
+    <arg index='3' c_array_length_in_arg='4' type_modifier='n'/>
+    <arg index='5' c_array_of_variable_length='true' type_modifier='n'/>
+    <arg index='6' type_modifier='o'/>
+  </function>
+  <function name='CCCryptorCreateFromData'>
+    <arg index='3' c_array_length_in_arg='4' type_modifier='n'/>
+    <arg index='5' c_array_of_variable_length='true' type_modifier='n'/>
+    <arg index='6' c_array_length_in_arg='7' type_modifier='n'/>
+    <arg index='8' type_modifier='o'/>
+    <arg index='9' type_modifier='o'/>
+  </function>
+  <function name='CCCryptorRelease'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='CCCryptorUpdate'>
+    <arg index='0' type_modifier='N'/>
+    <arg index='1' c_array_length_in_arg='2' type_modifier='n'/>
+    <arg index='3' c_array_length_in_arg='4' type_modifier='o'/>
+    <arg index='5' type_modifier='o'/>
+  </function>
+  <function name='CCCryptorFinal'>
+    <arg index='0' type_modifier='N'/>
+    <arg index='1' c_array_length_in_arg='2' type_modifier='o'/>
+    <arg index='3' type_modifier='o'/>
+  </function>
+  <function name='CCCryptorGetOutputLength'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='CCCryptorReset'>
+    <arg index='0' type_modifier='N'/>
+    <arg index='1' c_array_of_variable_length='true' type_modifier='n'/>
+  </function>
+  <function name='CCCrypt'>
+    <arg index='3' c_array_length_in_arg='4' type_modifier='n'/>
+    <arg index='5' c_array_of_variable_length='true' type_modifier='n'/>
+    <arg index='6' c_array_length_in_arg='7' type_modifier='n'/>
+    <arg index='8' c_array_length_in_arg='9' type_modifier='o'/>
+    <arg index='10' type_modifier='o'/>
+  </function>
+  <function name='CC_MD2_Init'>
+    <arg index='0' type_modifier='o'/>
+  </function>
+  <function name='CC_MD2_Update'>
+    <arg index='0' type_modifier='N'/>
+    <arg index='1' c_array_length_in_arg='2' type_modifier='n'/>
+  </function>
+  <function name='CC_MD2_Final'>
+    <arg index='0' c_array_of_fixed_length='16' type_modifier='o'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='CC_MD2'>
+    <arg index='0' c_array_length_in_arg='1' type_modifier='n'/>
+    <arg index='2' c_array_of_fixed_length='16' type_modifier='o'/>
+  </function>
+  <function name='CC_MD4_Init'>
+    <arg index='0' type_modifier='o'/>
+  </function>
+  <function name='CC_MD4_Update'>
+    <arg index='0' type_modifier='N'/>
+    <arg index='1' c_array_length_in_arg='2' type_modifier='n'/>
+  </function>
+  <function name='CC_MD4_Final'>
+    <arg index='0' c_array_of_fixed_length='16' type_modifier='o'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='CC_MD4'>
+    <arg index='0' c_array_length_in_arg='1' type_modifier='n'/>
+    <arg index='2' c_array_of_fixed_length='16' type_modifier='o'/>
+  </function>
+  <function name='CC_MD5_Init'>
+    <arg index='0' type_modifier='o'/>
+  </function>
+  <function name='CC_MD5_Update'>
+    <arg index='0' type_modifier='N'/>
+    <arg index='1' c_array_length_in_arg='2' type_modifier='n'/>
+  </function>
+  <function name='CC_MD5_Final'>
+    <arg index='0' c_array_of_fixed_length='16' type_modifier='o'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='CC_MD5'>
+    <arg index='0' c_array_length_in_arg='1' type_modifier='n'/>
+    <arg index='2' c_array_of_fixed_length='16' type_modifier='o'/>
+  </function>
+  <function name='CC_SHA1_Init'>
+    <arg index='0' type_modifier='o'/>
+  </function>
+  <function name='CC_SHA1_Update'>
+    <arg index='0' type_modifier='N'/>
+    <arg index='1' c_array_length_in_arg='2' type_modifier='n'/>
+  </function>
+  <function name='CC_SHA1_Final'>
+    <arg index='0' c_array_of_fixed_length='20' type_modifier='o'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='CC_SHA1'>
+    <arg index='0' c_array_length_in_arg='1' type_modifier='n'/>
+    <arg index='2' c_array_of_fixed_length='20' type_modifier='o'/>
+  </function>
+  <function name='CC_SHA224_Init'>
+    <arg index='0' type_modifier='o'/>
+  </function>
+  <function name='CC_SHA224_Update'>
+    <arg index='0' type_modifier='N'/>
+    <arg index='1' c_array_length_in_arg='2' type_modifier='n'/>
+  </function>
+  <function name='CC_SHA224_Final'>
+    <arg index='0' c_array_of_fixed_length='28' type_modifier='o'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='CC_SHA224'>
+    <arg index='0' c_array_length_in_arg='1' type_modifier='n'/>
+    <arg index='2' c_array_of_fixed_length='28' type_modifier='o'/>
+  </function>
+  <function name='CC_SHA256_Init'>
+    <arg index='0' type_modifier='o'/>
+  </function>
+  <function name='CC_SHA256_Update'>
+    <arg index='0' type_modifier='N'/>
+    <arg index='1' c_array_length_in_arg='2' type_modifier='n'/>
+  </function>
+  <function name='CC_SHA256_Final'>
+    <arg index='0' c_array_of_fixed_length='32' type_modifier='o'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='CC_SHA256'>
+    <arg index='0' c_array_length_in_arg='1' type_modifier='n'/>
+    <arg index='2' c_array_of_fixed_length='32' type_modifier='o'/>
+  </function>
+  <function name='CC_SHA384_Init'>
+    <arg index='0' type_modifier='o'/>
+  </function>
+  <function name='CC_SHA384_Update'>
+    <arg index='0' type_modifier='N'/>
+    <arg index='1' c_array_length_in_arg='2' type_modifier='n'/>
+  </function>
+  <function name='CC_SHA384_Final'>
+    <arg index='0' c_array_of_fixed_length='48' type_modifier='o'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='CC_SHA384'>
+    <arg index='0' c_array_length_in_arg='1' type_modifier='n'/>
+    <arg index='2' c_array_of_fixed_length='48' type_modifier='o'/>
+  </function>
+  <function name='CC_SHA512_Init'>
+    <arg index='0' type_modifier='o'/>
+  </function>
+  <function name='CC_SHA512_Update'>
+    <arg index='0' type_modifier='N'/>
+    <arg index='1' c_array_length_in_arg='2' type_modifier='n'/>
+  </function>
+  <function name='CC_SHA512_Final'>
+    <arg index='0' c_array_of_fixed_length='64' type_modifier='o'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='CC_SHA512'>
+    <arg index='0' c_array_length_in_arg='1' type_modifier='n'/>
+    <arg index='2' c_array_of_fixed_length='64' type_modifier='o'/>
+  </function>
+  <function name='CCHmacInit'>
+    <arg index='0' type_modifier='o'/>
+    <arg index='2' c_array_length_in_arg='3' type_modifier='n'/>
+  </function>
+  <function name='CCHmacUpdate'>
+    <arg index='0' type_modifier='N'/>
+    <arg index='1' c_array_length_in_arg='2' type_modifier='n'/>
+  </function>
+  <function name='CCHmacFinal'>
+    <arg index='0' type_modifier='n'/>
+    <arg index='1' c_array_of_variable_length='true' type_modifier='o'/>
+  </function>
+  <function name='CCHmac'>
+    <arg index='1' c_array_length_in_arg='2' type_modifier='n'/>
+    <arg index='3' c_array_length_in_arg='4' type_modifier='n'/>
+    <arg index='5' c_array_of_variable_length='true' type_modifier='o'/>
+  </function>
+  <function name='asl_add_log_file'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='asl_close'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='asl_free'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='asl_get'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='asl_key'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='asl_log'>
+    <arg index='0' type_modifier='n'/>
+    <arg index='1' type_modifier='n'/>
+    <arg printf_format='true' index='3'/>
+  </function>
+  <function name='asl_remove_log_file'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='asl_search'>
+    <arg index='0' type_modifier='n'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='asl_send'>
+    <arg index='0' type_modifier='n'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='asl_set'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='asl_set_filter'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='asl_set_query'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='asl_unset'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='asl_vlog' ignore='true' suggestion='Please use asl_log().'/>
+  <function name='aslresponse_free'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='aslresponse_next'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='copyfile'>
+    <arg index='2' type_modifier='o'/>
+  </function>
+  <function name='copyfile_state_free'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='copyfile_state_get'>
+    <arg index='0' type_modifier='n'/>
+    <arg index='2' type_modifier='o'/>
+  </function>
+  <function name='copyfile_state_set'>
+    <arg index='0' type_modifier='n'/>
+    <arg index='2' type_modifier='n'/>
+  </function>
+  <function name='fcopyfile'>
+    <arg index='2' type_modifier='o'/>
+  </function>
+  <function name='notify_check'>
+    <arg index='1' type_modifier='o'/>
+  </function>
+  <function name='notify_get_state'>
+    <arg index='1' type_modifier='o'/>
+  </function>
+  <function name='notify_register_check'>
+    <arg index='1' type_modifier='o'/>
+  </function>
+  <function name='notify_register_file_descriptor'>
+    <arg index='1' type_modifier='o'/>
+    <arg index='3' type_modifier='N'/>
+  </function>
+  <function name='notify_register_mach_port'>
+    <arg index='1' type_modifier='N'/>
+    <arg index='3' type_modifier='o'/>
+  </function>
+  <function name='notify_register_signal'>
+    <arg index='2' type_modifier='o'/>
+  </function>
+  <function name='sandbox_init'>
+    <arg index='2' type_modifier='o'/>
+  </function>
+  <function name='launch_data_copy'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_dict_remove'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_free'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_new_opaque'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_set_bool'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_set_fd'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_set_integer'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_set_machport'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_set_opaque'>
+    <arg index='0' type_modifier='n'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='launch_data_set_real'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_set_string'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_array_get_count'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_array_get_index'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_array_set_index'>
+    <arg index='0' type_modifier='n'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='launch_data_dict_get_count'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_dict_insert'>
+    <arg index='0' type_modifier='n'/>
+    <arg index='1' type_modifier='n'/>
+  </function>
+  <function name='launch_data_dict_lookup'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_get_bool'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_get_errno'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_get_fd'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_get_integer'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_get_machport'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_get_opaque'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_get_opaque_size'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_get_real'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_get_string'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_data_get_type'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+  <function name='launch_msg'>
+    <arg index='0' type_modifier='n'/>
+  </function>
+</signatures>

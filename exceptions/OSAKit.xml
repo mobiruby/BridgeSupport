@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <class name="OSAScript">
+    <method selector="compileAndReturnError:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+    <method selector="compiledDataForType:usingStorageOptions:error:">
+      <arg index="2" type_modifier="o"/>
+    </method>
+    <method selector="executeAndReturnDisplayValue:error:">
+      <arg index="0" type_modifier="o"/>
+      <arg index="1" type_modifier="o"/>
+    </method>
+    <method selector="executeAndReturnError:">
+      <arg index="0" type_modifier="o"/>
+    </method>
+    <method selector="executeAppleEvent:error:">
+      <arg index="1" type_modifier="o"/>
+    </method>
+    <method selector="executeHandlerWithName:arguments:error:">
+      <arg index="2" type_modifier="o"/>
+    </method>
+    <method selector="initWithCompiledData:error:">
+      <arg index="1" type_modifier="o"/>
+    </method>
+    <method selector="initWithContentsOfURL:error:">
+      <arg index="1" type_modifier="o"/>
+    </method>
+    <method selector="initWithContentsOfURL:language:error:">
+      <arg index="2" type_modifier="o"/>
+    </method>
+    <method selector="writeToURL:ofType:error:">
+      <arg index="2" type_modifier="o"/>
+    </method>
+    <method selector="writeToURL:ofType:usingStorageOptions:error:">
+      <arg index="3" type_modifier="o"/>
+    </method>
+  </class>
+  <class name="OSALanguage">
+    <method selector="initWithComponent:">
+      <arg index="0" type_modifier="n"/>
+    </method>
+  </class>
+</signatures>

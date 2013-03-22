@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <cftype name="LSMMapRef" gettypeid_func="LSMMapGetTypeID"/>
+  <cftype name="LSMResultRef" gettypeid_func="LSMResultGetTypeID"/>
+  <cftype name="LSMTextRef" gettypeid_func="LSMTextGetTypeID"/>
+</signatures>

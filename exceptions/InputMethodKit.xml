@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <class name="NSObject">
+    <method selector="mouseDownOnCharacterIndex:coordinate:withModifier:continueTracking:client:">
+      <arg index="3" type_modifier="n"/>
+    </method>
+  </class>
+</signatures>

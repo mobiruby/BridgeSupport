@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <ignored_headers>
+    <header>npapi.h</header>
+    <header>npfunctions.h</header>
+    <header>npruntime.h</header>
+    <header>nptextinput.h</header>
+  </ignored_headers>
+  <class name="NSObject">
+    <method selector="webPlugInCallJava:isStatic:returnType:method:arguments:callingURL:exceptionDescription:">
+      <arg index="0" type_modifier="n"/>
+      <arg index="3" type_modifier="n"/>
+      <arg index="4" c_array_of_variable_length="true" type_modifier="n"/>
+      <arg index="6" type_modifier="o"/>
+    </method>
+  </class>
+  <class name="WebHistory">
+    <method selector="loadFromURL:error:">
+      <arg index="1" type_modifier="o"/>
+    </method>
+    <method selector="saveToURL:error:">
+      <arg index="1" type_modifier="o"/>
+    </method>
+  </class>
+</signatures>

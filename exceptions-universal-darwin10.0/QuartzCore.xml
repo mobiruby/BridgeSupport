@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <ignored_headers>
+    <header>LKObsolete.h</header>
+    <header>CV</header>
+  </ignored_headers>
+  <struct name="CATransform3D"/>
+  <class name="CAMediaTimingFunction">
+    <method selector="getControlPointAtIndex:values:">
+      <arg c_array_of_fixed_length="2" index="1" type_modifier="o"/>
+    </method>
+  </class>
+  <class name="CAOpenGLLayer">
+    <method selector="canDrawInCGLContext:pixelFormat:forLayerTime:displayTime:">
+      <arg index="0" type_modifier="n"/>
+      <arg index="1" type_modifier="n"/>
+      <arg index="3" type_modifier="n"/>
+    </method>
+    <method selector="drawInCGLContext:pixelFormat:forLayerTime:displayTime:">
+      <arg index="0" type_modifier="n"/>
+      <arg index="1" type_modifier="n"/>
+      <arg index="3" type_modifier="n"/>
+    </method>
+  </class>
+  <class name="CARenderer">
+    <method selector="beginFrameAtTime:timeStamp:">
+      <arg index="1" type_modifier="n"/>
+    </method>
+    <method class_method="true" selector="rendererWithCGLContext:options:">
+      <arg type="CGLContextObj" index="0"/>
+    </method>
+  </class>
+  <class name="CIContext">
+    <method selector="render:toBitmap:rowBytes:bounds:format:colorSpace:">
+      <arg index="1" type_modifier="n"/>
+    </method>
+  </class>
+  <class name='CIKernel'>
+    <method selector='setROISelector:'>
+      <arg index='0' sel_of_type="(CGRect)regionOf:(int)samplerIndex destRect:(CGRect)r userInfo:(id)obj"/>
+    </method>
+  </class>
+  <class name="CIVector">
+    <method selector="initWithValues:count:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+    <method class_method="true" selector="vectorWithValues:count:">
+      <arg c_array_length_in_arg="1" index="0" type_modifier="n"/>
+    </method>
+  </class>
+  <class name="NSObject">
+    <method selector="load:">
+      <arg index="0" type_modifier="n"/>
+    </method>
+    <method selector="provideImageData:bytesPerRow:origin::size::userInfo:">
+      <arg index="0" type_modifier="n"/>
+    </method>
+  </class>
+</signatures>

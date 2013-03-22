@@ -1,0 +1,8 @@
+/Boolean;/c
+/*
+ * BrideSupport forces all boolean types to "bool", so that their encoding
+ * is 'B'
+ */
+typedef bool				Boolean;
+.
+w

@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version="1.0">
+  <struct name="DelimiterInfo"/>
+  <struct name="PhonemeDescriptor"/>
+  <struct name="PhonemeInfo"/>
+  <struct name="SpeechChannelRecord" opaque="true"/>
+  <struct name="SpeechErrorInfo"/>
+  <struct name="SpeechStatusInfo"/>
+  <struct name="SpeechVersionInfo"/>
+  <struct name="SpeechXtndData"/>
+  <struct name="VoiceDescription"/>
+  <struct name="VoiceFileInfo"/>
+  <struct name="VoiceSpec"/>
+  <function name="CopyPhonemesFromText">
+    <arg index="0" type_modifier="n"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="CopySpeechProperty">
+    <arg index="0" type_modifier="n"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="CountVoices">
+    <arg index="0" type_modifier="o"/>
+  </function>
+  <function name="GetIndVoice">
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="GetSpeechInfo">
+    <arg index="0" type_modifier="n"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="GetSpeechPitch">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="GetSpeechRate">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="GetVoiceDescription">
+    <arg index="0" type_modifier="n"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="GetVoiceInfo">
+    <arg index="0" type_modifier="n"/>
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="InvokeSpeechTextDoneUPP">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="3" index="2" type_modifier="o"/>
+    <arg index="3" type_modifier="o"/>
+    <arg index="4" type_modifier="o"/>
+    <arg index="5" type_modifier="n"/>
+  </function>
+  <function name="MakeVoiceSpec">
+    <arg index="2" type_modifier="o"/>
+  </function>
+  <function name="NewSpeechChannel">
+    <arg index="0" type_modifier="o"/>
+    <arg index="1" type_modifier="o"/>
+  </function>
+  <function name="SetSpeechInfo">
+    <arg index="0" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="SpeakBuffer">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+  </function>
+  <function name="SpeakText">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+  </function>
+  <function name="TextToPhonemes">
+    <arg index="0" type_modifier="n"/>
+    <arg c_array_length_in_arg="2" index="1" type_modifier="n"/>
+    <arg c_array_length_in_arg="5" index="4" type_modifier="o"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="ContinueSpeech">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DisposeSpeechChannel">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DisposeSpeechDoneUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DisposeSpeechErrorUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DisposeSpeechPhonemeUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DisposeSpeechSyncUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DisposeSpeechTextDoneUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="DisposeSpeechWordUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="InvokeSpeechDoneUPP">
+    <arg index="0" type_modifier="n"/>
+    <arg index="2" type_modifier="n"/>
+  </function>
+  <function name="InvokeSpeechErrorUPP">
+    <arg index="0" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+  </function>
+  <function name="InvokeSpeechPhonemeUPP">
+    <arg index="0" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="InvokeSpeechSyncUPP">
+    <arg index="0" type_modifier="n"/>
+    <arg index="3" type_modifier="n"/>
+  </function>
+  <function name="InvokeSpeechWordUPP">
+    <arg index="0" type_modifier="n"/>
+    <arg index="4" type_modifier="n"/>
+  </function>
+  <function name="NewSpeechDoneUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="NewSpeechErrorUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="NewSpeechPhonemeUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="NewSpeechSyncUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="NewSpeechTextDoneUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="NewSpeechWordUPP">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="PauseSpeechAt">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SetSpeechPitch">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SetSpeechProperty">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SetSpeechRate">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="SpeakCFString">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="StopSpeech">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="StopSpeechAt">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="UseDictionary">
+    <arg index="0" type_modifier="n"/>
+  </function>
+  <function name="UseSpeechDictionary">
+    <arg index="0" type_modifier="n"/>
+  </function>
+</signatures>
