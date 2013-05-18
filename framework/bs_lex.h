@@ -2,6 +2,11 @@
 /* Command-line: gperf --switch=1 --language=ANSI-C --struct-type -N bs_xml_element bs.gperf  */
 /* Computed positions: -k'1' */
 
+#ifndef __BS_LEX_H_
+#define __BS_LEX_H_
+
+#import <string.h>
+
 #if !((' ' == 32) && ('!' == 33) && ('"' == 34) && ('#' == 35) \
       && ('%' == 37) && ('&' == 38) && ('\'' == 39) && ('(' == 40) \
       && (')' == 41) && ('*' == 42) && ('+' == 43) && (',' == 44) \
@@ -81,7 +86,7 @@ hash (register const char *str, register unsigned int len)
   return len + asso_values[(unsigned char)str[0]];
 }
 
-#ifdef __GNUC__
+#if defined(__GNUC__) && !defined(__clang__)
 __inline
 #endif
 struct bs_xml_atom *
@@ -200,3 +205,5 @@ bs_xml_element (register const char *str, register unsigned int len)
 #define BS_XML_FUNCTION_ALIAS     12
 #define BS_XML_STRING_CONSTANT    13
 #define BS_XML_DEPENDS_ON         14
+
+#endif /* __BS_LEX_H_ */
