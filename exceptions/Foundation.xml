@@ -939,11 +939,6 @@
       <arg index="1" type_modifier="o"/>
     </method>
   </class>
-  <class name="NSPort">
-    <method class_method="true" selector="allocWithZone:">
-      <arg index="0" type_modifier="n"/>
-    </method>
-  </class>
   <class name="NSProxy">
     <method class_method="true" selector="allocWithZone:">
       <arg index="0" type_modifier="n"/>
